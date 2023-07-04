@@ -1,8 +1,9 @@
+
 package API.runners;
 
 import com.intuit.karate.junit5.Karate;
 
-public class KarateTestRunner {
+public class TestRunner {
 	
 	@Karate.Test
 	public Karate runTests() {
