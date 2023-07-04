@@ -1,10 +1,10 @@
 @Regression
 Feature: Get All Plan Code
-Background: Setup API test
-* def result = callonce read('GenerateTokenTest.feature')
-* def token = result.response.token
-Given url "https://tek-insurance-api.azurewebsites.net"
 
+  Background: Setup API test
+    * def result = callonce read('GenerateTokenTest.feature')
+    * def token = result.response.token
+    Given url "https://tek-insurance-api.azurewebsites.net"
 
   Scenario: Get All Plan Code Test
     And path "/api/plans/get-all-plan-code"
